@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CB70CA61825E38C0041CF44 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB70CA51825E38C0041CF44 /* Cocoa.framework */; };
+		4CB70CB01825E38C0041CF44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB70CAE1825E38C0041CF44 /* InfoPlist.strings */; };
+		4CB70CB21825E38C0041CF44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB70CB11825E38C0041CF44 /* main.m */; };
+		4CB70CB61825E38C0041CF44 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4CB70CB41825E38C0041CF44 /* Credits.rtf */; };
+		4CB70CB91825E38C0041CF44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB70CB81825E38C0041CF44 /* AppDelegate.m */; };
+		4CB70CBC1825E38C0041CF44 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB70CBA1825E38C0041CF44 /* MainMenu.xib */; };
+		4CB70CBF1825E38C0041CF44 /* JustMySQL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CB70CBD1825E38C0041CF44 /* JustMySQL.xcdatamodeld */; };
+		4CB70CC11825E38C0041CF44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB70CC01825E38C0041CF44 /* Images.xcassets */; };
+		4CB70CC81825E38C0041CF44 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB70CC71825E38C0041CF44 /* XCTest.framework */; };
+		4CB70CC91825E38C0041CF44 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB70CA51825E38C0041CF44 /* Cocoa.framework */; };
+		4CB70CD11825E38C0041CF44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB70CCF1825E38C0041CF44 /* InfoPlist.strings */; };
+		4CB70CD31825E38C0041CF44 /* JustMySQLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB70CD21825E38C0041CF44 /* JustMySQLTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CB70CCA1825E38C0041CF44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CB70C9A1825E38C0041CF44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CB70CA11825E38C0041CF44;
+			remoteInfo = JustMySQL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CB70CA21825E38C0041CF44 /* JustMySQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustMySQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB70CA51825E38C0041CF44 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4CB70CA81825E38C0041CF44 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4CB70CA91825E38C0041CF44 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4CB70CAA1825E38C0041CF44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CB70CAD1825E38C0041CF44 /* JustMySQL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JustMySQL-Info.plist"; sourceTree = "<group>"; };
+		4CB70CAF1825E38C0041CF44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CB70CB11825E38C0041CF44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CB70CB31825E38C0041CF44 /* JustMySQL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JustMySQL-Prefix.pch"; sourceTree = "<group>"; };
+		4CB70CB51825E38C0041CF44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4CB70CB71825E38C0041CF44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CB70CB81825E38C0041CF44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CB70CBB1825E38C0041CF44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4CB70CBE1825E38C0041CF44 /* JustMySQL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JustMySQL.xcdatamodel; sourceTree = "<group>"; };
+		4CB70CC01825E38C0041CF44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4CB70CC61825E38C0041CF44 /* JustMySQLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustMySQLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB70CC71825E38C0041CF44 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4CB70CCE1825E38C0041CF44 /* JustMySQLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JustMySQLTests-Info.plist"; sourceTree = "<group>"; };
+		4CB70CD01825E38C0041CF44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CB70CD21825E38C0041CF44 /* JustMySQLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JustMySQLTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CB70C9F1825E38C0041CF44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB70CA61825E38C0041CF44 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB70CC31825E38C0041CF44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB70CC91825E38C0041CF44 /* Cocoa.framework in Frameworks */,
+				4CB70CC81825E38C0041CF44 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CB70C991825E38C0041CF44 = {
+			isa = PBXGroup;
+			children = (
+				4CB70CAB1825E38C0041CF44 /* JustMySQL */,
+				4CB70CCC1825E38C0041CF44 /* JustMySQLTests */,
+				4CB70CA41825E38C0041CF44 /* Frameworks */,
+				4CB70CA31825E38C0041CF44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CB70CA31825E38C0041CF44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CB70CA21825E38C0041CF44 /* JustMySQL.app */,
+				4CB70CC61825E38C0041CF44 /* JustMySQLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CB70CA41825E38C0041CF44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CB70CA51825E38C0041CF44 /* Cocoa.framework */,
+				4CB70CC71825E38C0041CF44 /* XCTest.framework */,
+				4CB70CA71825E38C0041CF44 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CB70CA71825E38C0041CF44 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CB70CA81825E38C0041CF44 /* AppKit.framework */,
+				4CB70CA91825E38C0041CF44 /* CoreData.framework */,
+				4CB70CAA1825E38C0041CF44 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4CB70CAB1825E38C0041CF44 /* JustMySQL */ = {
+			isa = PBXGroup;
+			children = (
+				4CB70CB71825E38C0041CF44 /* AppDelegate.h */,
+				4CB70CB81825E38C0041CF44 /* AppDelegate.m */,
+				4CB70CBA1825E38C0041CF44 /* MainMenu.xib */,
+				4CB70CC01825E38C0041CF44 /* Images.xcassets */,
+				4CB70CBD1825E38C0041CF44 /* JustMySQL.xcdatamodeld */,
+				4CB70CAC1825E38C0041CF44 /* Supporting Files */,
+			);
+			path = JustMySQL;
+			sourceTree = "<group>";
+		};
+		4CB70CAC1825E38C0041CF44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CB70CAD1825E38C0041CF44 /* JustMySQL-Info.plist */,
+				4CB70CAE1825E38C0041CF44 /* InfoPlist.strings */,
+				4CB70CB11825E38C0041CF44 /* main.m */,
+				4CB70CB31825E38C0041CF44 /* JustMySQL-Prefix.pch */,
+				4CB70CB41825E38C0041CF44 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CB70CCC1825E38C0041CF44 /* JustMySQLTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CB70CD21825E38C0041CF44 /* JustMySQLTests.m */,
+				4CB70CCD1825E38C0041CF44 /* Supporting Files */,
+			);
+			path = JustMySQLTests;
+			sourceTree = "<group>";
+		};
+		4CB70CCD1825E38C0041CF44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CB70CCE1825E38C0041CF44 /* JustMySQLTests-Info.plist */,
+				4CB70CCF1825E38C0041CF44 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CB70CA11825E38C0041CF44 /* JustMySQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CB70CD61825E38C0041CF44 /* Build configuration list for PBXNativeTarget "JustMySQL" */;
+			buildPhases = (
+				4CB70C9E1825E38C0041CF44 /* Sources */,
+				4CB70C9F1825E38C0041CF44 /* Frameworks */,
+				4CB70CA01825E38C0041CF44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustMySQL;
+			productName = JustMySQL;
+			productReference = 4CB70CA21825E38C0041CF44 /* JustMySQL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CB70CC51825E38C0041CF44 /* JustMySQLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CB70CD91825E38C0041CF44 /* Build configuration list for PBXNativeTarget "JustMySQLTests" */;
+			buildPhases = (
+				4CB70CC21825E38C0041CF44 /* Sources */,
+				4CB70CC31825E38C0041CF44 /* Frameworks */,
+				4CB70CC41825E38C0041CF44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CB70CCB1825E38C0041CF44 /* PBXTargetDependency */,
+			);
+			name = JustMySQLTests;
+			productName = JustMySQLTests;
+			productReference = 4CB70CC61825E38C0041CF44 /* JustMySQLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CB70C9A1825E38C0041CF44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Example Inc.";
+				TargetAttributes = {
+					4CB70CC51825E38C0041CF44 = {
+						TestTargetID = 4CB70CA11825E38C0041CF44;
+					};
+				};
+			};
+			buildConfigurationList = 4CB70C9D1825E38C0041CF44 /* Build configuration list for PBXProject "JustMySQL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CB70C991825E38C0041CF44;
+			productRefGroup = 4CB70CA31825E38C0041CF44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CB70CA11825E38C0041CF44 /* JustMySQL */,
+				4CB70CC51825E38C0041CF44 /* JustMySQLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CB70CA01825E38C0041CF44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB70CB01825E38C0041CF44 /* InfoPlist.strings in Resources */,
+				4CB70CC11825E38C0041CF44 /* Images.xcassets in Resources */,
+				4CB70CB61825E38C0041CF44 /* Credits.rtf in Resources */,
+				4CB70CBC1825E38C0041CF44 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB70CC41825E38C0041CF44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB70CD11825E38C0041CF44 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CB70C9E1825E38C0041CF44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB70CB91825E38C0041CF44 /* AppDelegate.m in Sources */,
+				4CB70CBF1825E38C0041CF44 /* JustMySQL.xcdatamodeld in Sources */,
+				4CB70CB21825E38C0041CF44 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB70CC21825E38C0041CF44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB70CD31825E38C0041CF44 /* JustMySQLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CB70CCB1825E38C0041CF44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CB70CA11825E38C0041CF44 /* JustMySQL */;
+			targetProxy = 4CB70CCA1825E38C0041CF44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CB70CAE1825E38C0041CF44 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB70CAF1825E38C0041CF44 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CB70CB41825E38C0041CF44 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB70CB51825E38C0041CF44 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4CB70CBA1825E38C0041CF44 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB70CBB1825E38C0041CF44 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4CB70CCF1825E38C0041CF44 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB70CD01825E38C0041CF44 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CB70CD41825E38C0041CF44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4CB70CD51825E38C0041CF44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4CB70CD71825E38C0041CF44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JustMySQL/JustMySQL-Prefix.pch";
+				INFOPLIST_FILE = "JustMySQL/JustMySQL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CB70CD81825E38C0041CF44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JustMySQL/JustMySQL-Prefix.pch";
+				INFOPLIST_FILE = "JustMySQL/JustMySQL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CB70CDA1825E38C0041CF44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JustMySQL.app/Contents/MacOS/JustMySQL";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JustMySQL/JustMySQL-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JustMySQLTests/JustMySQLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4CB70CDB1825E38C0041CF44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JustMySQL.app/Contents/MacOS/JustMySQL";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JustMySQL/JustMySQL-Prefix.pch";
+				INFOPLIST_FILE = "JustMySQLTests/JustMySQLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CB70C9D1825E38C0041CF44 /* Build configuration list for PBXProject "JustMySQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB70CD41825E38C0041CF44 /* Debug */,
+				4CB70CD51825E38C0041CF44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CB70CD61825E38C0041CF44 /* Build configuration list for PBXNativeTarget "JustMySQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB70CD71825E38C0041CF44 /* Debug */,
+				4CB70CD81825E38C0041CF44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CB70CD91825E38C0041CF44 /* Build configuration list for PBXNativeTarget "JustMySQLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB70CDA1825E38C0041CF44 /* Debug */,
+				4CB70CDB1825E38C0041CF44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4CB70CBD1825E38C0041CF44 /* JustMySQL.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CB70CBE1825E38C0041CF44 /* JustMySQL.xcdatamodel */,
+			);
+			currentVersion = 4CB70CBE1825E38C0041CF44 /* JustMySQL.xcdatamodel */;
+			path = JustMySQL.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4CB70C9A1825E38C0041CF44 /* Project object */;
+}
