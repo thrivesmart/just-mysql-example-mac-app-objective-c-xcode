@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "MySQLKitDatabase.h"
+#import "MySQLKitQuery.h"
+
 
 @implementation AppDelegate
 
@@ -17,6 +20,30 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    MySQLKitDatabase* db = [[MySQLKitDatabase alloc] init];
+    db.socket = @"/tmp/mysql/mysql.sock";
+    db.serverName = @"localhost";
+    db.dbName = @"sampledb";
+    db.userName = @"root";
+    db.password = @"12345";
+    db.port = 8889;
+    @try{
+        [db connect];
+        MySQLKitQuery *query = [[MySQLKitQuery alloc] initWithDatabase:db];
+        query.sql = @"select * from table1 order by id";
+        [query execQuery];
+        NSInteger len = query.recordCount;
+        for(NSInteger i = 0; i < len; i++){
+            NSInteger id1 = [query integerValFromRow:i Column:0];
+            NSString *stringV1 = [query stringValFromRow:i Column:1];
+            //...
+        }
+    }
+    @catch (NSException *exception) {
+        // ...
+        [db errorMessage];
+    }
+    
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.example.JustMySQL" in the user's Application Support directory.

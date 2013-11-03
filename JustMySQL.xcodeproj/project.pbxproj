@@ -19,6 +19,10 @@
 		4CB70CC91825E38C0041CF44 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB70CA51825E38C0041CF44 /* Cocoa.framework */; };
 		4CB70CD11825E38C0041CF44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CB70CCF1825E38C0041CF44 /* InfoPlist.strings */; };
 		4CB70CD31825E38C0041CF44 /* JustMySQLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB70CD21825E38C0041CF44 /* JustMySQLTests.m */; };
+		4CB70CDD1825E3A00041CF44 /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB70CDC1825E3A00041CF44 /* libmysqlclient.a */; };
+		4CB70CE31825E52D0041CF44 /* MySQLKitQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB70CE21825E52D0041CF44 /* MySQLKitQuery.m */; };
+		4CB70CE61825E59F0041CF44 /* MySQLKitDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB70CE51825E59F0041CF44 /* MySQLKitDatabase.m */; };
+		4CB70CF31825EB010041CF44 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB70CF21825EB010041CF44 /* libc++.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,23 @@
 		4CB70CCE1825E38C0041CF44 /* JustMySQLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JustMySQLTests-Info.plist"; sourceTree = "<group>"; };
 		4CB70CD01825E38C0041CF44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4CB70CD21825E38C0041CF44 /* JustMySQLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JustMySQLTests.m; sourceTree = "<group>"; };
+		4CB70CDC1825E3A00041CF44 /* libmysqlclient.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.objfile"; path = libmysqlclient.a; sourceTree = "<group>"; };
+		4CB70CE11825E52D0041CF44 /* MySQLKitQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLKitQuery.h; sourceTree = "<group>"; };
+		4CB70CE21825E52D0041CF44 /* MySQLKitQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQLKitQuery.m; sourceTree = "<group>"; };
+		4CB70CE41825E59F0041CF44 /* MySQLKitDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySQLKitDatabase.h; sourceTree = "<group>"; };
+		4CB70CE51825E59F0041CF44 /* MySQLKitDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySQLKitDatabase.m; sourceTree = "<group>"; };
+		4CB70CE71825E7630041CF44 /* mysql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mysql.h; path = ../mysql.h; sourceTree = "<group>"; };
+		4CB70CE81825E81E0041CF44 /* mysql_com.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mysql_com.h; path = ../mysql_com.h; sourceTree = "<group>"; };
+		4CB70CE91825E81E0041CF44 /* mysql_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mysql_time.h; path = ../mysql_time.h; sourceTree = "<group>"; };
+		4CB70CEA1825E81E0041CF44 /* mysql_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mysql_version.h; path = ../mysql_version.h; sourceTree = "<group>"; };
+		4CB70CEB1825E83E0041CF44 /* my_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = my_list.h; path = ../my_list.h; sourceTree = "<group>"; };
+		4CB70CEC1825E84B0041CF44 /* client_plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = client_plugin.h; path = ../client_plugin.h; sourceTree = "<group>"; };
+		4CB70CED1825E88D0041CF44 /* plugin_auth_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = plugin_auth_common.h; path = ../plugin_auth_common.h; sourceTree = "<group>"; };
+		4CB70CEE1825E8B80041CF44 /* typelib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = typelib.h; path = ../typelib.h; sourceTree = "<group>"; };
+		4CB70CEF1825E8FB0041CF44 /* my_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = my_alloc.h; path = ../my_alloc.h; sourceTree = "<group>"; };
+		4CB70CF01825E9100041CF44 /* psi_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = psi_memory.h; path = ../psi_memory.h; sourceTree = "<group>"; };
+		4CB70CF11825E92C0041CF44 /* psi_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = psi_base.h; path = ../psi_base.h; sourceTree = "<group>"; };
+		4CB70CF21825EB010041CF44 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB70CF31825EB010041CF44 /* libc++.dylib in Frameworks */,
 				4CB70CA61825E38C0041CF44 /* Cocoa.framework in Frameworks */,
+				4CB70CDD1825E3A00041CF44 /* libmysqlclient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +120,8 @@
 		4CB70CA41825E38C0041CF44 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CB70CF21825EB010041CF44 /* libc++.dylib */,
+				4CB70CDC1825E3A00041CF44 /* libmysqlclient.a */,
 				4CB70CA51825E38C0041CF44 /* Cocoa.framework */,
 				4CB70CC71825E38C0041CF44 /* XCTest.framework */,
 				4CB70CA71825E38C0041CF44 /* Other Frameworks */,
@@ -119,10 +144,14 @@
 			children = (
 				4CB70CB71825E38C0041CF44 /* AppDelegate.h */,
 				4CB70CB81825E38C0041CF44 /* AppDelegate.m */,
+				4CB70CE41825E59F0041CF44 /* MySQLKitDatabase.h */,
+				4CB70CE51825E59F0041CF44 /* MySQLKitDatabase.m */,
+				4CB70CE11825E52D0041CF44 /* MySQLKitQuery.h */,
+				4CB70CE21825E52D0041CF44 /* MySQLKitQuery.m */,
+				4CB70CAC1825E38C0041CF44 /* Supporting Files */,
 				4CB70CBA1825E38C0041CF44 /* MainMenu.xib */,
 				4CB70CC01825E38C0041CF44 /* Images.xcassets */,
 				4CB70CBD1825E38C0041CF44 /* JustMySQL.xcdatamodeld */,
-				4CB70CAC1825E38C0041CF44 /* Supporting Files */,
 			);
 			path = JustMySQL;
 			sourceTree = "<group>";
@@ -130,6 +159,7 @@
 		4CB70CAC1825E38C0041CF44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4CB70CF41825EB890041CF44 /* MySQL */,
 				4CB70CAD1825E38C0041CF44 /* JustMySQL-Info.plist */,
 				4CB70CAE1825E38C0041CF44 /* InfoPlist.strings */,
 				4CB70CB11825E38C0041CF44 /* main.m */,
@@ -155,6 +185,24 @@
 				4CB70CCF1825E38C0041CF44 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CB70CF41825EB890041CF44 /* MySQL */ = {
+			isa = PBXGroup;
+			children = (
+				4CB70CF11825E92C0041CF44 /* psi_base.h */,
+				4CB70CF01825E9100041CF44 /* psi_memory.h */,
+				4CB70CEF1825E8FB0041CF44 /* my_alloc.h */,
+				4CB70CEE1825E8B80041CF44 /* typelib.h */,
+				4CB70CED1825E88D0041CF44 /* plugin_auth_common.h */,
+				4CB70CE71825E7630041CF44 /* mysql.h */,
+				4CB70CE81825E81E0041CF44 /* mysql_com.h */,
+				4CB70CE91825E81E0041CF44 /* mysql_time.h */,
+				4CB70CEA1825E81E0041CF44 /* mysql_version.h */,
+				4CB70CEC1825E84B0041CF44 /* client_plugin.h */,
+				4CB70CEB1825E83E0041CF44 /* my_list.h */,
+			);
+			name = MySQL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB70CE31825E52D0041CF44 /* MySQLKitQuery.m in Sources */,
 				4CB70CB91825E38C0041CF44 /* AppDelegate.m in Sources */,
 				4CB70CBF1825E38C0041CF44 /* JustMySQL.xcdatamodeld in Sources */,
 				4CB70CB21825E38C0041CF44 /* main.m in Sources */,
+				4CB70CE61825E59F0041CF44 /* MySQLKitDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +441,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JustMySQL/JustMySQL-Prefix.pch";
 				INFOPLIST_FILE = "JustMySQL/JustMySQL-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jenniferchen/Projects/tmp/JustMySQL,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -404,6 +458,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JustMySQL/JustMySQL-Prefix.pch";
 				INFOPLIST_FILE = "JustMySQL/JustMySQL-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jenniferchen/Projects/tmp/JustMySQL,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
