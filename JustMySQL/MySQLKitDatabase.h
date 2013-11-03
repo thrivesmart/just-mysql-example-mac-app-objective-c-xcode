@@ -21,7 +21,8 @@
 - (NSString*) r_escape:(NSString*)s; // escape simbols in the SQL string
 - (NSInteger) autoincrementID; // give last value Autoincriment field
 - (BOOL) connected; // test to connect
-- (void) errorMessage; // show NSAlert dialog message with lastError
+- (NSString*) errorMessage; // show NSAlert dialog message with lastError
+- (void) alertIfError; // show NSAlert dialog message with lastError
 
 @property (copy)NSString* socket;
 @property (copy)NSString* serverName;

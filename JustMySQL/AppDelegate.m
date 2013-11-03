@@ -20,30 +20,80 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    MySQLKitDatabase* db = [[MySQLKitDatabase alloc] init];
-    db.socket = @"/tmp/mysql/mysql.sock";
-    db.serverName = @"localhost";
-    db.dbName = @"sampledb";
-    db.userName = @"root";
-    db.password = @"12345";
-    db.port = 8889;
+    
+    NSString *dbName = @"ensembl_production_72";
+    
+    MySQLKitDatabase* server = [[MySQLKitDatabase alloc] init];
+    // db.socket = @"/tmp/mysql/mysql.sock";
+    server.serverName = @"useastdb.ensembl.org";
+    server.dbName = @"";
+    server.userName = @"anonymous";
+    server.password = @"";
+    server.port = 3306;
     @try{
-        [db connect];
-        MySQLKitQuery *query = [[MySQLKitQuery alloc] initWithDatabase:db];
-        query.sql = @"select * from table1 order by id";
+        [server connect];
+        
+        MySQLKitQuery *query = [[MySQLKitQuery alloc] initWithDatabase:server];
+        query.sql = @"show databases";
         [query execQuery];
         NSInteger len = query.recordCount;
-        for(NSInteger i = 0; i < len; i++){
-            NSInteger id1 = [query integerValFromRow:i Column:0];
-            NSString *stringV1 = [query stringValFromRow:i Column:1];
-            //...
+        for(int i = 0; i < len; i++){
+            NSString *currentDbName = [query stringValFromRow:i Column:0];
+            NSLog(@"Database: %@", currentDbName);
+        }
+        
+        MySQLKitQuery *query2 = [[MySQLKitQuery alloc] initWithDatabase:server];
+        query2.sql = [NSString stringWithFormat:@"show tables in %@", dbName];
+        [query2 execQuery];
+        len = query2.recordCount;
+        for(int i = 0; i < len; i++){
+            NSString *currentTableName = [query2 stringValFromRow:i Column:0];
+            NSLog(@"Table: %@ in DB %@", currentTableName, dbName);
         }
     }
     @catch (NSException *exception) {
-        // ...
-        [db errorMessage];
+        NSLog(@"Exception: %@", exception);
+        NSLog(@"ERROR! Message: %@", [server errorMessage]);
+        [server alertIfError];
+    }
+    @finally {
+        [server disconnect];
     }
     
+    
+    MySQLKitDatabase* db = [[MySQLKitDatabase alloc] init];
+    // db.socket = @"/tmp/mysql/mysql.sock";
+    db.serverName = @"useastdb.ensembl.org";
+    db.dbName = dbName;
+    db.userName = @"anonymous";
+    db.password = @"";
+    db.port = 3306;
+    @try{
+        [db connect];
+        
+        MySQLKitQuery *query3 = [[MySQLKitQuery alloc] initWithDatabase:db];
+        NSString *selectSql = [NSString stringWithFormat:@"select * from %@ limit 10", @"species"];
+        NSLog(@"Querying: `%@`", selectSql);
+        query3.sql = selectSql;
+        [query3 execQuery];
+        NSInteger len = query3.recordCount;
+        NSLog(@"Number of records in species: %ld", (long)len);
+        for(int i = 0; i < len; i++){
+            NSInteger col0 = [query3 integerValFromRow:i Column:0];
+            NSString *col1 = [query3 stringValFromRow:i Column:1];
+            NSLog(@"Entry: %ld\t%@", (long)col0,col1);
+        }
+    }
+    @catch (NSException *exception) {
+        NSLog(@"Exception: %@", exception);
+        NSLog(@"ERROR! Message: %@", [db errorMessage]);
+        [db alertIfError];
+    }
+    @finally {
+        [db disconnect];
+    }
+    
+
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.example.JustMySQL" in the user's Application Support directory.

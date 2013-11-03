@@ -76,7 +76,7 @@
     if(ch){
         lastError = [NSString stringWithUTF8String:ch];
         if(lastError.length){
-            NSLog(@"Error connection: %@",lastError);
+            NSLog(@"Failed to connect to database: Error: %@",lastError);
             NSException* exc = [NSException exceptionWithName:@"Error MySQL database" reason:lastError userInfo:nil];
             @throw exc;
         }
@@ -119,7 +119,12 @@
         return NO;
 }
 
-- (void) errorMessage
+- (NSString*) errorMessage
+{
+    return lastError;
+}
+
+- (void) alertIfError
 {
     if(lastError){
         NSAlert* alert = [[NSAlert alloc] init];
