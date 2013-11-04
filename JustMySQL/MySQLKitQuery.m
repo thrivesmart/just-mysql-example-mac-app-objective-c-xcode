@@ -32,9 +32,13 @@
         num_fields = mysql_num_fields(res);
         MYSQL_ROW row;
         while ((row = mysql_fetch_row(res))){
-            for(NSInteger i=0;i<num_fields;i++){
-                NSString* sField = [NSString stringWithUTF8String:row[i]];
-                [rowsArray addObject:sField];
+            for (NSInteger i=0;i<num_fields;i++) {
+                if (row[i]) { // handle null values
+                  NSString* sField = [NSString stringWithUTF8String:row[i]];
+                  [rowsArray addObject:sField];
+                } else {
+                  [rowsArray addObject:[NSNull null]];
+                }
             }
         }
         

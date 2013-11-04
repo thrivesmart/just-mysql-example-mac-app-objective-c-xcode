@@ -72,7 +72,7 @@
         [db connect];
         
         MySQLKitQuery *query3 = [[MySQLKitQuery alloc] initWithDatabase:db];
-        NSString *selectSql = [NSString stringWithFormat:@"select * from %@ limit 10", @"species"];
+        NSString *selectSql = [NSString stringWithFormat:@"select * from `%@` limit 10", @"species"];
         NSLog(@"Querying: `%@`", selectSql);
         query3.sql = selectSql;
         [query3 execQuery];

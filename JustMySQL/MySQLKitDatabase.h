@@ -27,7 +27,7 @@
 @property (copy)NSString* socket;
 @property (copy)NSString* serverName;
 @property (copy)NSString* dbName;
-@property NSInteger port;
+@property unsigned int port;
 @property (copy)NSString* userName;
 @property (copy)NSString* password;
 @property (readonly)MYSQL* mysql;
